@@ -22,7 +22,7 @@ const Navbar = () => {
     );
     return (
       <Container>
-        <div className="navbar bg-base-100 mt-8">
+        <div className="navbar  mt-8 fixed z-10 max-w-screen-xl">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
