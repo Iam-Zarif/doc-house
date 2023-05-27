@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Container from "../../../Container/Container";
-
+import bannerImg from "../../../assets/Group 34991.png";
 
 const Navbar = () => {
     const items = (
@@ -22,7 +22,12 @@ const Navbar = () => {
     );
     return (
       <Container>
-        <div className="navbar  mt-8 fixed z-10 max-w-screen-xl">
+        <div
+          className="navbar   fixed z-10 max-w-[1400px] "
+          style={{
+            backgroundImage: `url("https://i.ibb.co/4YGGspn/Rectangle-1.jpg")`,
+          }}
+        >
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -45,20 +50,17 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
-               {items}
+                {items}
               </ul>
             </div>
-            <Link className="btn btn-ghost normal-case text-xl">
+            <Link className="btn btn-ghost normal-case text-xl text-white">
               <span className="text-amber-500 font-bold text-3xl">DOC</span>{" "}
               HOUSE
             </Link>
           </div>
           <div className="navbar-end hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
-              {items}
-            </ul>
+            <ul className="menu menu-horizontal px-1">{items}</ul>
           </div>
-          
         </div>
       </Container>
     );

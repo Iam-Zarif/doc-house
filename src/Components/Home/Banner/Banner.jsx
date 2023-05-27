@@ -8,14 +8,18 @@ const Banner = () => {
       <div
         className="hero min-h-[750px] "
         style={{
-          backgroundImage: `url("https://i.ibb.co/1bZCzCZ/Rectangle-1.jpg")`,
+          backgroundImage: `url("https://i.ibb.co/4YGGspn/Rectangle-1.jpg")`,
         }}
       >
         <div>
-          <img className="absolute bottom-96 w-20" src={img1} alt="" />
+          <img className=" absolute bottom-96 w-20" src={img1} alt="" />
         </div>
         <div className="">
-          <img className="absolute top-10 w-20 lg:w-fit lg:top-32" src={img2} alt="" />
+          <img
+            className="z-10 absolute top-10 w-20 lg:w-fit lg:top-32"
+            src={img2}
+            alt=""
+          />
         </div>
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">
