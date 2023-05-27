@@ -7,16 +7,16 @@ const Navbar = () => {
     const items = (
       <>
         <li>
-          <Link to='/' className="text-xl text-white">Home</Link>
+          <Link to='/' className="text-xl text-white border p-2 rounded-lg bg-slate-600">Home</Link>
         </li>
         <li>
-          <Link className="text-xl text-white">About</Link>
+          <Link className="text-xl text-white border p-2 rounded-lg bg-slate-600">About</Link>
         </li>
         <li>
-          <Link className="text-xl text-white">Appointment</Link>
+          <Link className="text-xl text-white border p-2 rounded-lg bg-slate-600">Appointment</Link>
         </li>
         <li>
-          <Link className="text-xl text-white" to='/login'>Login</Link>
+          <Link className="text-xl text-white border p-2 rounded-lg bg-slate-600" to='/login'>Login</Link>
         </li>
       </>
     );
@@ -24,9 +24,7 @@ const Navbar = () => {
       <Container>
         <div
           className="navbar   fixed z-10 max-w-[1400px] "
-          style={{
-            backgroundImage: `url("https://i.ibb.co/4YGGspn/Rectangle-1.jpg")`,
-          }}
+          
         >
           <div className="navbar-start">
             <div className="dropdown">
@@ -53,13 +51,13 @@ const Navbar = () => {
                 {items}
               </ul>
             </div>
-            <Link className="btn btn-ghost normal-case text-xl text-white">
+            <p className="border p-2 rounded-lg bg-slate-600 normal-case text-xl text-white">
               <span className="text-amber-500 font-bold text-3xl">DOC</span>{" "}
               HOUSE
-            </Link>
+            </p>
           </div>
           <div className="navbar-end hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">{items}</ul>
+            <ul className="menu menu-horizontal px-1 flex gap-8">{items}</ul>
           </div>
         </div>
       </Container>

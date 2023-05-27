@@ -7,7 +7,7 @@ const Services = () => {
     return (
       <Container>
         <div
-          className="mt-32 grid grid-cols-1 lg:grid-cols-2"
+          className="mt-32 grid grid-cols-1 lg:grid-cols-2 px-10 lg:px-0"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
@@ -16,7 +16,7 @@ const Services = () => {
           </div>
           <div className="">
             <h1 className="text-4xl font-bold">Our Services</h1>
-            <p className="mt-8 font-mono">
+            <p className="mt-8 font-mono text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inve ntore veritatis et quasi architecto beatae vitae
